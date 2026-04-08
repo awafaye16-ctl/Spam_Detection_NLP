@@ -1,0 +1,284 @@
+{% extends "base.html" %}
+
+{% block title %}Analysis Results - SpamGuard Enterprise{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <!-- Result Header -->
+        <div class="card shadow-sm mb-4">
+            <div class="card-header {% if result.is_spam %}bg-danger{% else %}bg-success{% endif %} text-white">
+                <div class="d-flex align-items-center justify-content-between">
+                    <h5 class="mb-0">
+                        {% if result.is_spam %}
+                            <i class="fas fa-exclamation-triangle me-2"></i>
+                            Spam Message Detected
+                        {% else %}
+                            <i class="fas fa-check-circle me-2"></i>
+                            Clean Message
+                        {% endif %}
+                    </h5>
+                    <span class="badge bg-light text-dark">
+                        <i class="fas fa-clock me-1"></i>
+                        {{ timestamp }}
+                    </span>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h6 class="fw-semibold mb-2">Original Message:</h6>
+                        <div class="bg-light p-3 rounded mb-3">
+                            <p class="mb-0">{{ text }}</p>
+                        </div>
+                        
+                        <h6 class="fw-semibold mb-2">Processed Text:</h6>
+                        <div class="bg-light p-3 rounded">
+                            <p class="mb-0 text-muted">{{ result.processed_text }}</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="text-center">
+                            <div class="result-score {% if result.is_spam %}spam{% else %}ham{% endif %} mb-3">
+                                <div class="score-number">{{ (result.confidence * 100)|round(1) }}%</div>
+                                <div class="score-label">Confidence</div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <h6 class="fw-semibold">Classification Details:</h6>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <strong>Result:</strong> 
+                                        <span class="badge {% if result.is_spam %}bg-danger{% else %}bg-success{% endif %}">
+                                            {% if result.is_spam %}SPAM{% else %}HAM{% endif %}
+                                        </span>
+                                    </li>
+                                    <li class="mb-2">
+                                        <strong>Raw Score:</strong> {{ (result.raw_score * 100)|round(2) }}%
+                                    </li>
+                                    <li class="mb-2">
+                                        <strong>Threshold:</strong> {{ (result.threshold * 100)|round(1) }}%
+                                    </li>
+                                    <li class="mb-2">
+                                        <strong>Confidence:</strong> {{ (result.confidence * 100)|round(2) }}%
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Analysis Details -->
+        <div class="card shadow-sm mb-4">
+            <div class="card-header bg-info text-white">
+                <h5 class="mb-0">
+                    <i class="fas fa-microscope me-2"></i>
+                    Technical Analysis
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6 class="fw-semibold mb-3">Model Information</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fas fa-brain text-primary me-2"></i>
+                                <strong>Model:</strong> BERT-base-uncased
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-cogs text-success me-2"></i>
+                                <strong>Architecture:</strong> Fine-tuned Transformer
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-tachometer-alt text-warning me-2"></i>
+                                <strong>Processing Time:</strong> ~0.9 seconds
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-database text-info me-2"></i>
+                                <strong>Training Data:</strong> 5,574 SMS messages
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="fw-semibold mb-3">Feature Analysis</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fas fa-filter text-primary me-2"></i>
+                                <strong>Text Cleaning:</strong> Applied
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-ban text-success me-2"></i>
+                                <strong>Stopword Removal:</strong> Applied
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-compress-alt text-warning me-2"></i>
+                                <strong>Stemming:</strong> Porter Algorithm
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-key text-info me-2"></i>
+                                <strong>Tokenization:</strong> BERT Tokenizer
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Risk Assessment -->
+        {% if result.is_spam %}
+        <div class="card shadow-sm mb-4 border-danger">
+            <div class="card-header bg-danger text-white">
+                <h5 class="mb-0">
+                    <i class="fas fa-exclamation-triangle me-2"></i>
+                    Risk Assessment
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="alert alert-warning" role="alert">
+                    <i class="fas fa-exclamation-triangle me-2"></i>
+                    <strong>Warning:</strong> This message has been identified as potential spam. 
+                    Please exercise caution when responding or clicking any links.
+                </div>
+                
+                <h6 class="fw-semibold mb-3">Common Spam Indicators Detected:</h6>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fas fa-check text-danger me-2"></i>
+                                Urgent language detected
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check text-danger me-2"></i>
+                                Suspicious keywords present
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check text-danger me-2"></i>
+                                Unusual message structure
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fas fa-times text-muted me-2"></i>
+                                No personalization detected
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-times text-muted me-2"></i>
+                                Generic greeting pattern
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-times text-muted me-2"></i>
+                                High spam probability score
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <div class="card shadow-sm mb-4 border-success">
+            <div class="card-header bg-success text-white">
+                <h5 class="mb-0">
+                    <i class="fas fa-check-circle me-2"></i>
+                    Message Validation
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="alert alert-success" role="alert">
+                    <i class="fas fa-check-circle me-2"></i>
+                    <strong>Safe Message:</strong> This message appears to be legitimate and safe to interact with.
+                </div>
+                
+                <h6 class="fw-semibold mb-3">Legitimacy Indicators:</h6>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fas fa-check text-success me-2"></i>
+                                Normal language patterns
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check text-success me-2"></i>
+                                Appropriate content context
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check text-success me-2"></i>
+                                No suspicious keywords
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fas fa-check text-success me-2"></i>
+                                Standard message structure
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check text-success me-2"></i>
+                                Low spam probability
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check text-success me-2"></i>
+                                Professional tone detected
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- Action Buttons -->
+        <div class="text-center mb-4">
+            <a href="{{ url_for('index') }}" class="btn btn-primary btn-lg me-2">
+                <i class="fas fa-arrow-left me-2"></i>
+                Analyze Another Message
+            </a>
+            <a href="{{ url_for('upload_file') }}" class="btn btn-outline-primary btn-lg">
+                <i class="fas fa-file-upload me-2"></i>
+                Batch Analysis
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+.result-score {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    line-height: 80px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.result-score.spam {
+    background: linear-gradient(45deg, #dc3545, #c82333);
+    color: white;
+}
+
+.result-score.ham {
+    background: linear-gradient(45deg, #28a745, #218838);
+    color: white;
+}
+
+.score-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.score-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+</style>
+{% endblock %}

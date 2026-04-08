@@ -1,0 +1,126 @@
+2026-04-07 05:25:58,942 - __main__ - INFO - Model loaded successfully
+2026-04-07 05:25:58,991 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.64.94:5000
+2026-04-07 05:25:58,991 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-07 05:25:59,023 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-04-07 05:26:03,787 - __main__ - INFO - Model loaded successfully
+2026-04-07 05:26:03,982 - werkzeug - WARNING -  * Debugger is active!
+2026-04-07 05:26:03,985 - werkzeug - INFO -  * Debugger PIN: 281-694-487
+2026-04-07 14:43:07,631 - werkzeug - INFO -  * Detected change in 'C:\\Users\\awa\\Desktop\\ML_Working_group\\Spam-detection-NLP\\spam_bert.py', reloading
+2026-04-07 14:43:12,048 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-04-07 14:43:27,885 - __main__ - INFO - Model loaded successfully
+2026-04-07 14:43:27,945 - werkzeug - WARNING -  * Debugger is active!
+2026-04-07 14:43:27,963 - werkzeug - INFO -  * Debugger PIN: 281-694-487
+2026-04-07 15:28:46,006 - __main__ - INFO - Model loaded successfully
+2026-04-07 15:28:46,096 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.137.228:5000
+2026-04-07 15:28:46,096 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-07 15:28:46,148 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-04-07 15:28:54,310 - __main__ - INFO - Model loaded successfully
+2026-04-07 15:28:54,357 - werkzeug - WARNING -  * Debugger is active!
+2026-04-07 15:28:54,391 - werkzeug - INFO -  * Debugger PIN: 281-694-487
+2026-04-07 15:28:57,520 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:28:57] "GET / HTTP/1.1" 200 -
+2026-04-07 15:28:57,560 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:28:57] "GET / HTTP/1.1" 200 -
+2026-04-07 15:28:57,588 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:28:57] "GET / HTTP/1.1" 200 -
+2026-04-07 15:28:58,210 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:28:58] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-04-07 15:28:58,230 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:28:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-04-07 15:28:58,257 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:28:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-04-07 15:28:58,698 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:28:58] "GET /static/js/main.js HTTP/1.1" 200 -
+2026-04-07 15:28:58,718 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:28:58] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-04-07 15:28:58,755 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:28:58] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-04-07 15:28:59,022 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:28:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-07 15:28:59,182 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:28:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-07 15:29:26,343 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:29:26] "GET /upload HTTP/1.1" 200 -
+2026-04-07 15:29:26,471 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:29:26] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-04-07 15:29:26,476 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:29:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-04-07 15:29:59,612 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:29:59] "GET / HTTP/1.1" 200 -
+2026-04-07 15:29:59,844 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:29:59] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-04-07 15:29:59,846 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:29:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-04-07 15:30:18,011 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:30:18] "GET /upload HTTP/1.1" 200 -
+2026-04-07 15:30:18,290 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:30:18] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-04-07 15:30:18,293 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:30:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-04-07 15:30:27,580 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:30:27] "GET /analytics HTTP/1.1" 200 -
+2026-04-07 15:30:27,682 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:30:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-04-07 15:30:27,685 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:30:27] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-04-07 15:31:15,579 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:31:15] "GET / HTTP/1.1" 200 -
+2026-04-07 15:31:15,693 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:31:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-04-07 15:31:15,697 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:31:15] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-04-07 15:32:24,048 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:32:24] "POST /predict HTTP/1.1" 200 -
+2026-04-07 15:32:24,217 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:32:24] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-04-07 15:32:24,220 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:32:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-04-07 15:32:41,979 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:32:41] "GET / HTTP/1.1" 200 -
+2026-04-07 15:32:42,075 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:32:42] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-04-07 15:32:42,078 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:32:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-04-07 15:33:10,570 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:33:10] "POST /predict HTTP/1.1" 200 -
+2026-04-07 15:33:10,683 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:33:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-04-07 15:33:10,686 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:33:10] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-04-07 15:38:51,825 - __main__ - INFO - Model loaded successfully with threshold: 0.5000000000000001
+2026-04-07 15:38:51,914 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.137.228:5000
+2026-04-07 15:38:51,914 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-04-07 15:38:51,942 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-04-07 15:39:01,129 - __main__ - INFO - Model loaded successfully with threshold: 0.5000000000000001
+2026-04-07 15:39:01,195 - werkzeug - WARNING -  * Debugger is active!
+2026-04-07 15:39:01,211 - werkzeug - INFO -  * Debugger PIN: 281-694-487
+2026-04-07 15:39:16,584 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:39:16] "GET / HTTP/1.1" 200 -
+2026-04-07 15:39:17,007 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:39:17] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-04-07 15:39:17,015 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:39:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-04-07 15:39:23,730 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:39:23] "POST /predict HTTP/1.1" 200 -
+2026-04-07 15:39:23,832 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:39:23] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-04-07 15:39:23,839 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:39:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-04-07 15:39:42,645 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:39:42] "GET /upload HTTP/1.1" 200 -
+2026-04-07 15:39:42,742 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:39:42] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-04-07 15:39:42,746 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:39:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-04-07 15:41:07,541 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:41:07] "GET / HTTP/1.1" 200 -
+2026-04-07 15:41:07,655 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:41:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-04-07 15:41:07,658 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:41:07] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-04-07 15:41:13,660 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:41:13] "POST /predict HTTP/1.1" 200 -
+2026-04-07 15:41:13,753 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:41:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-04-07 15:41:13,758 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:41:13] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-04-07 15:41:28,175 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:41:28] "GET / HTTP/1.1" 200 -
+2026-04-07 15:41:28,320 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:41:28] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-04-07 15:41:28,325 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:41:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-04-07 15:41:39,563 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:41:39] "POST /predict HTTP/1.1" 200 -
+2026-04-07 15:41:39,698 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:41:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-04-07 15:41:39,704 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:41:39] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-04-07 15:41:58,254 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:41:58] "GET /upload HTTP/1.1" 200 -
+2026-04-07 15:41:58,716 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:41:58] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-04-07 15:41:58,727 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:41:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-04-07 15:42:44,509 - __main__ - ERROR - Upload error: 'float' object is not subscriptable
+2026-04-07 15:42:44,523 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:42:44] "POST /upload HTTP/1.1" 200 -
+2026-04-07 15:42:44,614 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:42:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-04-07 15:42:44,621 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:42:44] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-04-07 15:42:49,587 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:42:49] "GET / HTTP/1.1" 200 -
+2026-04-07 15:42:49,702 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:42:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-04-07 15:42:49,707 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:42:49] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-04-07 15:45:15,894 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:45:15] "GET / HTTP/1.1" 200 -
+2026-04-07 15:45:16,062 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:45:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-04-07 15:45:16,102 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:45:16] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-04-07 15:46:01,549 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:46:01] "GET /analytics HTTP/1.1" 200 -
+2026-04-07 15:46:01,726 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:46:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-04-07 15:46:01,730 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:46:01] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-04-07 15:46:53,995 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:46:53] "GET /analytics HTTP/1.1" 200 -
+2026-04-07 15:46:54,109 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:46:54] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-04-07 15:46:54,121 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 15:46:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-04-07 21:49:00,096 - werkzeug - INFO -  * Detected change in 'C:\\Users\\awa\\Desktop\\ML_Working_group\\Spam-detection-NLP\\spam_bert.py', reloading
+2026-04-07 21:49:20,218 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-04-07 21:50:46,158 - __main__ - INFO - Model loaded successfully with threshold: 0.5000000000000001
+2026-04-07 21:50:46,268 - werkzeug - WARNING -  * Debugger is active!
+2026-04-07 21:50:46,293 - werkzeug - INFO -  * Debugger PIN: 281-694-487
+2026-04-07 21:50:46,931 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 21:50:46] "GET / HTTP/1.1" 200 -
+2026-04-07 21:50:46,940 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 21:50:46] "GET / HTTP/1.1" 200 -
+2026-04-07 21:50:48,520 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 21:50:48] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-04-07 21:50:48,523 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 21:50:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-04-07 21:50:48,556 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 21:50:48] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2026-04-07 21:50:48,561 - werkzeug - INFO - 127.0.0.1 - - [07/Apr/2026 21:50:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-04-07 22:56:53,101 - werkzeug - INFO -  * Detected change in 'C:\\Users\\awa\\Desktop\\ML_Working_group\\Spam-detection-NLP\\spam_bert.py', reloading
+2026-04-07 22:56:59,466 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-04-07 22:57:46,269 - __main__ - INFO - Model loaded successfully with threshold: 0.5000000000000001
+2026-04-07 22:57:46,366 - werkzeug - WARNING -  * Debugger is active!
+2026-04-07 22:57:46,388 - werkzeug - INFO -  * Debugger PIN: 281-694-487

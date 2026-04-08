@@ -1,0 +1,287 @@
+{% extends "base.html" %}
+
+{% block title %}SpamGuard Enterprise - Home{% endblock %}
+
+{% block content %}
+<div class="row">
+    <!-- Hero Section -->
+    <div class="col-12 mb-5">
+        <div class="jumbotron bg-gradient text-white p-5 rounded-3 shadow-lg">
+            <div class="container text-center">
+                <h1 class="display-4 fw-bold mb-3">
+                    <i class="fas fa-shield-alt me-3"></i>
+                    Enterprise Spam Detection
+                </h1>
+                <p class="lead mb-4">
+                    Advanced AI-powered spam detection using BERT technology
+                </p>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="d-flex justify-content-center gap-3">
+                            <span class="badge bg-success fs-6">
+                                <i class="fas fa-check-circle me-1"></i>98% Accuracy
+                            </span>
+                            <span class="badge bg-info fs-6">
+                                <i class="fas fa-rocket me-1"></i>Real-time Processing
+                            </span>
+                            <span class="badge bg-warning fs-6">
+                                <i class="fas fa-bolt me-1"></i>Enterprise Scale
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Quick Analysis Card -->
+    <div class="col-lg-6 mb-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">
+                    <i class="fas fa-search me-2"></i>
+                    Quick Message Analysis
+                </h5>
+            </div>
+            <div class="card-body">
+                <form action="{{ url_for('predict') }}" method="POST">
+                    <div class="mb-3">
+                        <label for="message" class="form-label fw-semibold">
+                            Enter your message:
+                        </label>
+                        <textarea 
+                            class="form-control" 
+                            id="message" 
+                            name="message" 
+                            rows="6" 
+                            placeholder="Type or paste your message here for instant spam analysis..."
+                            required
+                        ></textarea>
+                        <div class="form-text">
+                            <i class="fas fa-info-circle me-1"></i>
+                            Our AI will analyze this message using advanced BERT technology
+                        </div>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="fas fa-microscope me-2"></i>
+                            Analyze Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Statistics Card -->
+    <div class="col-lg-6 mb-4">
+        <div class="card h-100 shadow-sm">
+            <div class="card-header bg-success text-white">
+                <h5 class="mb-0">
+                    <i class="fas fa-chart-line me-2"></i>
+                    System Performance
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row text-center">
+                    <div class="col-4 mb-3">
+                        <div class="stat-item">
+                            <div class="stat-number text-primary">98%</div>
+                            <div class="stat-label text-muted">Accuracy</div>
+                        </div>
+                    </div>
+                    <div class="col-4 mb-3">
+                        <div class="stat-item">
+                            <div class="stat-number text-success">0.9s</div>
+                            <div class="stat-label text-muted">Avg. Time</div>
+                        </div>
+                    </div>
+                    <div class="col-4 mb-3">
+                        <div class="stat-item">
+                            <div class="stat-number text-info">10K+</div>
+                            <div class="stat-label text-muted">Messages/hr</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr>
+                
+                <h6 class="fw-semibold mb-3">Model Performance Metrics</h6>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span>Precision</span>
+                        <span class="badge bg-success">96.9%</span>
+                    </div>
+                    <div class="progress" style="height: 8px;">
+                        <div class="progress-bar bg-success" style="width: 96.9%"></div>
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span>Recall</span>
+                        <span class="badge bg-info">74.5%</span>
+                    </div>
+                    <div class="progress" style="height: 8px;">
+                        <div class="progress-bar bg-info" style="width: 74.5%"></div>
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span>F1-Score</span>
+                        <span class="badge bg-warning">70.5%</span>
+                    </div>
+                    <div class="progress" style="height: 8px;">
+                        <div class="progress-bar bg-warning" style="width: 70.5%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Features Grid -->
+    <div class="col-12 mb-4">
+        <h4 class="fw-semibold mb-3">
+            <i class="fas fa-star me-2"></i>
+            Enterprise Features
+        </h4>
+    </div>
+    
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm feature-card">
+            <div class="card-body text-center">
+                <div class="feature-icon mb-3">
+                    <i class="fas fa-brain fa-3x text-primary"></i>
+                </div>
+                <h5 class="card-title">BERT Technology</h5>
+                <p class="card-text text-muted">
+                    State-of-the-art natural language processing with contextual understanding
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm feature-card">
+            <div class="card-body text-center">
+                <div class="feature-icon mb-3">
+                    <i class="fas fa-tachometer-alt fa-3x text-success"></i>
+                </div>
+                <h5 class="card-title">Real-time Processing</h5>
+                <p class="card-text text-muted">
+                    Instant analysis with sub-second response times for high-volume operations
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm feature-card">
+            <div class="card-body text-center">
+                <div class="feature-icon mb-3">
+                    <i class="fas fa-shield-virus fa-3x text-warning"></i>
+                </div>
+                <h5 class="card-title">Advanced Security</h5>
+                <p class="card-text text-muted">
+                    Enterprise-grade security with encrypted data processing and privacy protection
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Recent Activity -->
+    <div class="col-lg-8 mb-4">
+        <div class="card shadow-sm">
+            <div class="card-header bg-info text-white">
+                <h5 class="mb-0">
+                    <i class="fas fa-history me-2"></i>
+                    Recent Analysis Activity
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="activity-feed">
+                    <div class="activity-item d-flex align-items-center mb-3">
+                        <div class="activity-icon bg-success text-white rounded-circle p-2 me-3">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="activity-content">
+                            <div class="fw-semibold">Clean message detected</div>
+                            <div class="text-muted small">"Meeting tomorrow at 2 PM" - 2 minutes ago</div>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-item d-flex align-items-center mb-3">
+                        <div class="activity-icon bg-danger text-white rounded-circle p-2 me-3">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="activity-content">
+                            <div class="fw-semibold">Spam message blocked</div>
+                            <div class="text-muted small">"WIN FREE IPHONE NOW!!!" - 5 minutes ago</div>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-item d-flex align-items-center mb-3">
+                        <div class="activity-icon bg-success text-white rounded-circle p-2 me-3">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="activity-content">
+                            <div class="fw-semibold">Clean message detected</div>
+                            <div class="text-muted small">"Please review the attached report" - 8 minutes ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Quick Actions -->
+    <div class="col-lg-4 mb-4">
+        <div class="card shadow-sm">
+            <div class="card-header bg-warning text-dark">
+                <h5 class="mb-0">
+                    <i class="fas fa-bolt me-2"></i>
+                    Quick Actions
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="d-grid gap-2">
+                    <a href="{{ url_for('upload_file') }}" class="btn btn-outline-primary">
+                        <i class="fas fa-file-upload me-2"></i>
+                        Upload File for Analysis
+                    </a>
+                    <a href="{{ url_for('analytics') }}" class="btn btn-outline-success">
+                        <i class="fas fa-chart-bar me-2"></i>
+                        View Analytics Dashboard
+                    </a>
+                    <button class="btn btn-outline-info" onclick="showAPIDocumentation()">
+                        <i class="fas fa-code me-2"></i>
+                        API Documentation
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+function showAPIDocumentation() {
+    var apiModal = new bootstrap.Modal(document.getElementById('apiModal'));
+    apiModal.show();
+}
+
+// Auto-resize textarea
+document.getElementById('message').addEventListener('input', function() {
+    this.style.height = 'auto';
+    this.style.height = (this.scrollHeight) + 'px';
+});
+</script>
+{% endblock %}

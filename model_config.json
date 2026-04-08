@@ -1,0 +1,6 @@
+{
+  "seuil_optimal": 0.5000000000000001,
+  "max_len": 64,
+  "model_type": "simple_sklearn",
+  "best_f1_score": 1.0
+}
